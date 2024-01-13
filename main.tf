@@ -2,8 +2,6 @@ provider "aws" {
   region = "us-east-1"
 }
 
-local env = terraform.workspace
-
 data "aws_ami" "al2" {
   most_recent = true
   filter {
